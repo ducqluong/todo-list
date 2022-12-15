@@ -1,8 +1,141 @@
-#croatian-forest {
-  height: 200px;
-  width: auto;
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(fonts/Norse-Bold.otf);
 }
 
 body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
   display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  background-image: url("./img/halie-west-25xggax4bSA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35vw;
+  color: white;
+  font-family: norse-bold;
+}
+
+.odin-background {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 207px;
+  height: 160px;
+}
+
+.odin-background p {
+  font-size: 100px;
+}
+
+.odin-logo {
+  width: 100px;
+  height: 140px;
+  padding-bottom: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+  width: 65vw;
+}
+
+.first {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 5%;
+  margin-right: 35%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.first > h3:first-of-type {
+  margin-bottom: 30px;
+}
+
+.first > h3:last-of-type {
+  margin-bottom: 50px;
+}
+
+.second {
+  background-color: white;
+}
+
+.second-content {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+/* Let's do this! */
+.second-content > h3:first-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 25px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.form-div input {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  width: 150px;
+  height: 20px;
+  padding-left: 8px;
+}
+
+.third {
+  height: 40vh;
+  margin-left: 5%;
+}
+
+button {
+  padding: 12px 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #596d48;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
 }
