@@ -1,15 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  background-color: rgb(245, 245, 245);
 }
 
 main {
@@ -17,6 +12,10 @@ main {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
+}
+
+li {
+  list-style: none;
 }
 
 .left {
@@ -34,7 +33,7 @@ main {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   /* margin-top: 207px; */
-  height: 160px;
+  height: 14vh;
 }
 
 .todo-background p {
@@ -44,6 +43,45 @@ main {
 .right {
   display: flex;
   flex-direction: column;
-  background-color: rgb(245, 245, 245);
+
   width: 65vw;
+}
+
+.input-section,
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-section {
+  height: 14vh;
+}
+
+.todo-input {
+  height: 36px;
+  width: 50vw;
+  padding-left: 10px;
+}
+
+.submit-button,
+.delete-button {
+  height: 28px;
+  width: 28px;
+  border-radius: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65vw;
+  height: 90vh;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
